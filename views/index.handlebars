@@ -1,0 +1,90 @@
+
+<main>
+  {{>login-block}}
+  <div class="container">
+
+    <div class='query-container'>
+      <form id='query-params' method='POST' action='/query'>
+        <div class="row" id="search-bar">
+            Search Keyword: <input type="text" id="query" name="query">
+             <button id="search-button" type="submit">Go</button>
+        </div>
+        <div class="row" id="filters">
+          <div class="col-md-4" id="fiter-options">
+          <h3 id="choice-headers"> Diet </h3>
+            <select name='diet'>
+              <option value="" id="any">Any</option>
+              <option value="vegetarian" id="diet1">Vegetarian</option>
+              <option value="vegan" id="diet2">Vegan</option>
+              <option value="pescetarian" id="pes">Pescetarian</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+          <h3 id="choice-headers"> Intolerances </h3>
+          <div class="row" id="fiter-options">
+              <form class= "intolerances">
+              <div class="col-md-6">
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="gluten">Gluten</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="soy">Soy</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="wheat">Wheat</label>
+                    </div>
+              </div>
+              <div class="col-md-6">
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="dairy">Dairy</label>
+                    </div>
+                     <div class="checkbox">
+                      <label><input type="checkbox" value="lactose">Lactose</label>
+                    </div>
+                    <div class="checkbox">
+                      <label><input type="checkbox" value="">None</label>
+                    </div>
+              </div>
+              </form>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <h3 id="choice-headers"> Type </h3>
+             <div class="row" id="fiter-options">
+              <form class= "intolerances">
+               <div class="col-md-6">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="">Any</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="appetizer">Appetizer</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="salad">Salad</label>
+                    </div>
+                </div>
+                 <div class="col-md-6">
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="soup">Soup</label>
+                    </div>
+                     <div class="checkbox">
+                        <label><input type="checkbox" value="main">Main</label>
+                    </div>
+                    <div class="checkbox">
+                        <label><input type="checkbox" value="dessert">Dessert</label>
+                    </div>
+                  </div>
+              </form>
+            </div>
+            </div>
+        </div>
+      </form>
+    </div>
+    {{> search-block}}
+
+    {{#if ingredients}}
+      {{> recipe-block}}
+    {{/if}}
+
+  </div>
+</main>

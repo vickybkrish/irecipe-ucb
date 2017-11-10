@@ -1,0 +1,25 @@
+<div class='container'>
+
+    <div class="row" id='recipe-information'>
+      <div class="col s6">
+        {{#each info}}
+            <img src={{this.photo_url}}>
+            <h2>{{this.dish_name}}</h2>
+            <h4>{{this.servings}} servings</h4>
+            <br>
+        {{/each}}
+
+        {{#each ingredients}}
+            {{this.original_string}}<br>
+        {{/each}}
+        <br>
+
+        {{#each info}}
+            {{#each description}}
+                {{this}}<br>
+            {{/each}}
+        {{/each}}
+
+      </div>
+    </div>
+</div>

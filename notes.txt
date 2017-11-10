@@ -1,0 +1,7 @@
+DATABASE INFO:
+
+dish_name = "Title" (lasagna, burger...)
+category = "Category" (main dish, dessert...)
+link = 'WebURL'
+servings = 'Servings'
+photo_url = 'PhotoUrl'

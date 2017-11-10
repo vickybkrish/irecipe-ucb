@@ -1,0 +1,20 @@
+<div class="container">
+
+  {{#if user.username}}
+    <div class="page-header text-center">
+        <h1><span class="fa fa-anchor"></span> Hello {{user.username}}!</h1>
+
+        <a href="/" class="btn btn-default"><span class="fa fa-user"></span>Home</a>
+        <a href="/my-recipes" class="btn btn-default btn-sm">My Recipes</a>
+        <a href="/logout" class="btn btn-default btn-sm">Logout</a>
+    </div>
+
+  {{else}}
+    <div class='login-container'>
+      <a href="/login" class="btn btn-default" id="login-button"><span class="fa fa-user"></span>Login</a>
+    </div>
+
+
+
+  {{/if}}
+</div>

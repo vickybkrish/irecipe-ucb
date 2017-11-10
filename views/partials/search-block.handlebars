@@ -1,0 +1,13 @@
+<div class="row" id='search-result'>
+  <div class="col s6">
+    {{#each list}}
+      <form class='recipe-result' method='POST' action='/recipe'>
+        <input type="hidden" name='link' value={{this.recipeUrl}}>
+        <h2>{{this.title}}</h2>
+        <button class='get-recipe-button' type='submit' id="getrecipe-button">Get Recipe!</button>
+        </div>
+         <img src={{this.image}} id="search-image">
+      </form>
+    {{/each}}
+  </div>
+</div>

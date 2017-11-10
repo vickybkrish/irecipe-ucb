@@ -1,0 +1,23 @@
+<main>
+
+{{> login-block}}
+
+
+
+<div class="row" id='saved-recipes'>
+  <div class="col s6">
+    {{#each list}}
+      <form class='select-result' method='POST' action='/chosen-recipe'>
+        <img src={{this.photo_url}}>{{this.dish_name}}
+        <input type="hidden" name='id' value={{this.recipe_id}}>
+        <button class='retrieve-recipe-button' type='submit'>Get Recipe!</button>
+      </form>
+    {{/each}}
+  </div>
+</div>
+
+{{#if info}}
+    {{> chosen-block}}
+{{/if}}
+
+</main>

@@ -1,0 +1,88 @@
+
+#login-button{
+	position:relative;
+	top:-63px;
+	left:1020px;
+	font-family: 'Caveat Brush', cursive;
+	color:green;
+	font-size:18px;
+
+}
+
+#query{
+    border-style:thick;
+    border-width:1px;
+    width:700px;
+    height:50px;
+}
+
+#search-button{
+    position:relative;
+    left:30px;
+    height:30px;
+    font-family: 'Yesteryear', cursive;
+
+}
+
+#search-bar{
+	color: blue;
+	font-size: 22px;
+	font-family: 'Yesteryear', cursive;
+
+
+}
+
+#filters{
+    position:relative;
+    left:250px;
+    width:600px;
+}
+
+#choice-headers{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+#fiter-options{
+    font-family: 'Marck Script', cursive;
+    font-size: 16px;
+}
+
+#navbartxt{
+
+	font-family: 'Henny Penny', cursive;
+	font-size:40px;
+	color:green;
+}
+
+#saved-recipes{
+	font-family: 'Rancho', cursive;
+}
+
+#recipe-information{
+	font-family: 'Rancho', cursive;
+}
+
+#recipe-selection{
+	font-family: 'Rancho', cursive;
+	position:fixed;
+	right:20px;
+}
+
+#search-result{
+	font-family: 'Rancho', cursive;
+	border-image-width: 200px;
+	position:relative;
+	left:50px;
+}
+
+#search-image{
+	width:200px;
+	height:200px;
+}
+
+/*#getrecipe-button{
+	position:absolute;
+	left:200px;
+}/*
